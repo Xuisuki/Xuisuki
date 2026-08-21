@@ -19,7 +19,9 @@ sed -i -E "s/\.svg\?v=[0-9]+/.svg?v=$stamp/g" README.md
 
 git add assets README.md
 git diff --cached --quiet && { echo "без изменений"; exit 0; }
-git commit -qm "refresh: activity $(date -u +%F)"
+# подпись задаётся явно: под systemd домашнего каталога нет и ~/.gitconfig не читается
+git -c user.name=Xuisuki -c user.email=231307371+Xuisuki@users.noreply.github.com \
+   commit -qm "refresh: activity $(date -u +%F)"
 env -u HTTPS_PROXY -u HTTP_PROXY GIT_TERMINAL_PROMPT=0 \
   git -c credential.helper= \
       -c credential.helper='!f(){ echo username=x-access-token; echo "password=$XTOK"; };f' \
