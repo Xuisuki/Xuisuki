@@ -56,5 +56,3 @@
 **[reporadar](https://github.com/Xuisuki/reporadar)** — hidden GitHub gems delivered to Telegram: velocity ranking, LLM judging, real screenshot cards. Runs on any OpenAI-compatible model. `Python`
 
 **[funpay-stars-bot](https://github.com/Xuisuki/funpay-stars-bot)** — money-safe FunPay to Telegram Stars autoseller: self-hosted Fragment delivery, idempotent order ledger, animated terminal dashboard. `Python`
-
-<sub>Every graphic on this page is generated from <a href="tools/build.py">tools/build.py</a> and stored in this repository — no third-party badge services, nothing to break. Activity refreshes daily from GitHub Actions.</sub>
