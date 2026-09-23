@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" width="900" height="330" role="img" aria-label="Journey: what I have built, month by month">
+<defs>
+  <filter id="blur" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="48"/></filter>
+  <filter id="soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="7"/></filter>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+  </filter>
+  <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+    <circle cx="1.2" cy="1.2" r="1.2" fill="#2b333e"/>
+  </pattern>
+  <linearGradient id="path" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#2dd4bf"/><stop offset=".45" stop-color="#8b7bff"/>
+    <stop offset=".65" stop-color="#ff4fa3"/><stop offset=".82" stop-color="#f5c542"/>
+    <stop offset="1" stop-color="#2dd4bf"/>
+  </linearGradient>
+  <clipPath id="card"><rect x="1" y="1" width="898" height="328" rx="18"/></clipPath>
+</defs>
+<style>
+  .t { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Roboto,'Helvetica Neue',Arial,sans-serif; } .m { font-family:ui-monospace,'SF Mono','JetBrains Mono','Cascadia Code',Menlo,Consolas,monospace; }
+  .rise { opacity:0; animation:rise .8s cubic-bezier(.2,.7,.3,1) forwards; }
+  @keyframes rise { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:none; } }
+  .draw { stroke-dasharray:800; stroke-dashoffset:800; animation:draw 1.9s cubic-bezier(.5,0,.2,1) .1s forwards; }
+  @keyframes draw { to { stroke-dashoffset:0; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; }
+  }
+</style>
+<g clip-path="url(#card)">
+  <rect width="900" height="330" fill="#0b0f15"/>
+  <g filter="url(#blur)">
+    <circle cx="200" cy="165" r="110" fill="#2dd4bf" opacity="0.24750000000000003"><animateTransform attributeName="transform" type="translate" values="0 0;60 20;0 0" dur="20s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1"/></circle>
+    <circle cx="700" cy="165" r="120" fill="#ff4fa3" opacity="0.1925"><animateTransform attributeName="transform" type="translate" values="0 0;-60 -15;0 0" dur="23s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1"/></circle>
+  </g>
+  <rect width="900" height="330" fill="url(#dots)" opacity=".45"/>
+  <path d="M60,165 L840,165" stroke="#2b333e" stroke-width="2"/>
+  <path class="draw" d="M60,165 L840,165" stroke="url(#path)" stroke-width="2.4" stroke-linecap="round"/>
+  <g><circle r="9" fill="#e8eef5" opacity=".35" filter="url(#soft)"/><circle r="2.6" fill="#e8eef5"/>
+    <animateMotion dur="6s" repeatCount="indefinite" path="M60,165 L840,165" keyPoints="0;1" keyTimes="0;1" calcMode="linear"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.08;.92;1" dur="6s" repeatCount="indefinite"/></g>
+  <g class="rise" style="animation-delay:0.25s"><line x1="60" y1="151" x2="60" y2="134" stroke="#2dd4bf" stroke-width="1" opacity=".45" stroke-dasharray="2 3"/><text class="m" x="50" y="58" fill="#2dd4bf" font-size="11" letter-spacing="2" text-anchor="start">APR 2026</text><text class="t" x="50" y="80" fill="#e8eef5" font-size="16.5" font-weight="700" text-anchor="start">Web studio work</text><text class="t" x="50" y="102" fill="#8b96a3" font-size="13" text-anchor="start">Sites for an ISP and a shop,</text><text class="t" x="50" y="120" fill="#8b96a3" font-size="13" text-anchor="start">landing pages, first deploys</text><circle cx="60" cy="165" r="14" fill="#2dd4bf" opacity=".18" filter="url(#soft)"/><circle cx="60" cy="165" r="6.5" fill="#0b0f15" stroke="#2dd4bf" stroke-width="2"/><circle cx="60" cy="165" r="2.6" fill="#2dd4bf"/></g><g class="rise" style="animation-delay:0.39s"><line x1="216" y1="179" x2="216" y2="196" stroke="#3aa7ff" stroke-width="1" opacity=".45" stroke-dasharray="2 3"/><text class="m" x="216" y="214" fill="#3aa7ff" font-size="11" letter-spacing="2" text-anchor="middle">MAY 2026</text><text class="t" x="216" y="236" fill="#e8eef5" font-size="16.5" font-weight="700" text-anchor="middle">Network backend in Go</text><text class="t" x="216" y="258" fill="#8b96a3" font-size="13" text-anchor="middle">gRPC services, PostgreSQL,</text><text class="t" x="216" y="276" fill="#8b96a3" font-size="13" text-anchor="middle">billing and a node fleet</text><circle cx="216" cy="165" r="14" fill="#3aa7ff" opacity=".18" filter="url(#soft)"/><circle cx="216" cy="165" r="6.5" fill="#0b0f15" stroke="#3aa7ff" stroke-width="2"/><circle cx="216" cy="165" r="2.6" fill="#3aa7ff"/></g><g class="rise" style="animation-delay:0.53s"><line x1="372" y1="151" x2="372" y2="134" stroke="#8b7bff" stroke-width="1" opacity=".45" stroke-dasharray="2 3"/><text class="m" x="372" y="58" fill="#8b7bff" font-size="11" letter-spacing="2" text-anchor="middle">JUN 2026</text><text class="t" x="372" y="80" fill="#e8eef5" font-size="16.5" font-weight="700" text-anchor="middle">LLM gateway</text><text class="t" x="372" y="102" fill="#8b96a3" font-size="13" text-anchor="middle">40+ model providers behind</text><text class="t" x="372" y="120" fill="#8b96a3" font-size="13" text-anchor="middle">one API, token billing</text><circle cx="372" cy="165" r="14" fill="#8b7bff" opacity=".18" filter="url(#soft)"/><circle cx="372" cy="165" r="6.5" fill="#0b0f15" stroke="#8b7bff" stroke-width="2"/><circle cx="372" cy="165" r="2.6" fill="#8b7bff"/></g><g class="rise" style="animation-delay:0.67s"><line x1="528" y1="179" x2="528" y2="196" stroke="#ff4fa3" stroke-width="1" opacity=".45" stroke-dasharray="2 3"/><text class="m" x="528" y="214" fill="#ff4fa3" font-size="11" letter-spacing="2" text-anchor="middle">JUL 2026</text><text class="t" x="528" y="236" fill="#e8eef5" font-size="16.5" font-weight="700" text-anchor="middle">Plazma Kino · Krypta</text><text class="t" x="528" y="258" fill="#8b96a3" font-size="13" text-anchor="middle">Online cinema and a Telegram</text><text class="t" x="528" y="276" fill="#8b96a3" font-size="13" text-anchor="middle">commerce bot with Mini App</text><circle cx="528" cy="165" r="14" fill="#ff4fa3" opacity=".18" filter="url(#soft)"/><circle cx="528" cy="165" r="6.5" fill="#0b0f15" stroke="#ff4fa3" stroke-width="2"/><circle cx="528" cy="165" r="2.6" fill="#ff4fa3"/></g><g class="rise" style="animation-delay:0.81s"><line x1="684" y1="151" x2="684" y2="134" stroke="#f5c542" stroke-width="1" opacity=".45" stroke-dasharray="2 3"/><text class="m" x="684" y="58" fill="#f5c542" font-size="11" letter-spacing="2" text-anchor="middle">AUG 2026</text><text class="t" x="684" y="80" fill="#e8eef5" font-size="16.5" font-weight="700" text-anchor="middle">Apps, TV and games</text><text class="t" x="684" y="102" fill="#8b96a3" font-size="13" text-anchor="middle">Android TV in Kotlin, desktop,</text><text class="t" x="684" y="120" fill="#8b96a3" font-size="13" text-anchor="middle">a Godot game, server cockpit</text><circle cx="684" cy="165" r="14" fill="#f5c542" opacity=".18" filter="url(#soft)"/><circle cx="684" cy="165" r="6.5" fill="#0b0f15" stroke="#f5c542" stroke-width="2"/><circle cx="684" cy="165" r="2.6" fill="#f5c542"/></g><g class="rise" style="animation-delay:0.95s"><line x1="840" y1="179" x2="840" y2="196" stroke="#2dd4bf" stroke-width="1" opacity=".45" stroke-dasharray="2 3"/><text class="m" x="850" y="214" fill="#2dd4bf" font-size="11" letter-spacing="2" text-anchor="end">SEP 2026  · NOW</text><text class="t" x="850" y="236" fill="#e8eef5" font-size="16.5" font-weight="700" text-anchor="end">AI products</text><text class="t" x="850" y="258" fill="#8b96a3" font-size="13" text-anchor="end">Product-card generator, video</text><text class="t" x="850" y="276" fill="#8b96a3" font-size="13" text-anchor="end">autopilot, admin panels</text><circle cx="840" cy="165" r="14" fill="#2dd4bf" opacity=".18" filter="url(#soft)"/><circle cx="840" cy="165" r="6.5" fill="#0b0f15" stroke="#2dd4bf" stroke-width="2"/><circle cx="840" cy="165" r="2.6" fill="#2dd4bf"/><circle cx="840" cy="165" r="7" fill="none" stroke="#2dd4bf" stroke-width="1.4"><animate attributeName="r" values="7;20;7" dur="2.6s" repeatCount="indefinite"/><animate attributeName="opacity" values=".9;0;.9" dur="2.6s" repeatCount="indefinite"/></circle></g>
+</g>
+<rect x=".5" y=".5" width="899" height="329" rx="18" fill="none" stroke="#232b36"/>
+</svg>
