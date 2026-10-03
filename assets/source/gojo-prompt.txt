@@ -1,0 +1,9 @@
+Use case: stylized-concept.
+Asset type: transparent character cutout for an animated GitHub portfolio hero.
+Primary request: Satoru Gojo from Jujutsu Kaisen, recognizable and beautifully rendered as a premium 3D anime collectible / cinematic stylized 3D character.
+Subject: an adult Satoru Gojo with sculpted spiky white hair, vivid icy blue eyes, a sleek black high-collar jacket, a confident subtle smile. Three-quarter standing pose, visible from top of hair down to mid-thigh. His right hand reaches toward the viewer in a restrained Infinity gesture, two fingers raised near the chest. Head faces slightly to his left so he looks toward the portfolio text. Proportions elegant, no exaggerated muscularity.
+Style/medium: polished high-end 3D render, realistic cloth and smooth stylized skin, crisp sculpted hair strands, sophisticated anime likeness, strong depth, tasteful collectible-figure quality.
+Composition/framing: one complete isolated character, portrait framing, centered with the silhouette contained inside the canvas including the hand and all hair tips. Keep the character large, tightly framed with only a small transparent margin. No scenery and no floor.
+Lighting/mood: cool cyan rim light on one side and subtle violet rim light on the other, soft neutral key light that keeps the face clear. Black outfit remains readable against a future midnight-blue background.
+Text: no text.
+Constraints: genuinely transparent background and clean alpha edges. Do not draw a banner, a website, cards, badges, typography, energy rings, smoke, a checkerboard or a backdrop. Character only. No watermark.
