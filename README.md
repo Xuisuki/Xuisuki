@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg?v=a47534a18e98">
-  <img alt="Xuisuki / prodX" src="assets/header-light.svg?v=0bc758c062ca" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg?v=618a5d9cbdbe">
+  <img alt="Xuisuki / prodX" src="assets/header-light.svg?v=d5a81d66e9e0" width="100%">
 </picture>
 
 Серверные системы, Telegram-сервисы и приложения.
